@@ -4,12 +4,13 @@ public class Main {
         // Задача 1.1
         System.out.println(" Задача 1.1 ");
 
-        int contribution = 65535;
+        int monthSalary = 65535;
+        int goal = 2459000;
         int sum = 0;
         int i = 1;
-        for (; sum <= 2459000; i++) {
+        for (; sum <= goal; i++) {
             sum = sum + sum / 100;
-            sum = sum + contribution;
+            sum = sum + monthSalary;
             System.out.println(" Месяц " + i + " , сумма накоплений равна " + sum + " рублей ");
         }
 
@@ -44,11 +45,12 @@ public class Main {
         // Задача 2.1/2.2
         System.out.println(" Задача 2.1/2.2 ");
 
-        int contributionVasil = 15000;
+        int monthVasil = 15000;
+        int goalVasil = 12_000_000;
         int amountOfSavings = 0;
         int c = 1;
-        for (;amountOfSavings <= 12_000_000; c++) {
-            amountOfSavings = amountOfSavings + contributionVasil;
+        for (;amountOfSavings <= goalVasil; c++) {
+            amountOfSavings = amountOfSavings + monthVasil;
             amountOfSavings = amountOfSavings + (amountOfSavings / 100 * 7);
             if (c % 6 == 0){
             System.out.println(" Месяц " + c + " , сумма накоплений составляет " + amountOfSavings);}
@@ -57,11 +59,12 @@ public class Main {
         // Задача 2.3
         System.out.println(" Задача 2.3 ");
 
-        int amount = 15000;
+        int month = 15000;
+        int nineYears = 12*9;
         int total = 0;
         int d = 1;
-        for (;d<=12*9;d++){
-            total = amount + total;
+        for (;d<=nineYears;d++){
+            total = month + total;
             total = total + (total/100*7);
             if (d % 6 ==0){
                 System.out.println(" Месяц " + d + " , сумма накоплений составляет " + total);}
@@ -78,10 +81,12 @@ public class Main {
         // Задача 3.1
         System.out.println(" Задача 3.1 ");
 
-        int yearComet = 1822;
-        for (;yearComet<=2122;yearComet++){
-            if (yearComet % 79 ==0){
-                System.out.println(yearComet);}
+        int yearNow = 2022;
+        int yearOneHundredNext = yearNow + 100;
+        int yearTwoHundredPast = yearNow-200;
+        for (;yearTwoHundredPast<=yearOneHundredNext;yearTwoHundredPast++){
+            if (yearTwoHundredPast % 79 ==0){
+                System.out.println(yearTwoHundredPast);}
         }
 
         // Задача 3.2
