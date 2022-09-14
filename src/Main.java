@@ -45,12 +45,12 @@ public class Main {
         // Задача 2.1/2.2
         System.out.println(" Задача 2.1/2.2 ");
 
-        int monthVasil = 15000;
+        month = 15000;
         int goalVasil = 12_000_000;
         int amountOfSavings = 0;
         int c = 1;
         for (;amountOfSavings <= goalVasil; c++) {
-            amountOfSavings = amountOfSavings + monthVasil;
+            amountOfSavings = amountOfSavings + month;
             amountOfSavings = amountOfSavings + (amountOfSavings / 100 * 7);
             if (c % 6 == 0){
             System.out.println(" Месяц " + c + " , сумма накоплений составляет " + amountOfSavings);}
@@ -59,12 +59,12 @@ public class Main {
         // Задача 2.3
         System.out.println(" Задача 2.3 ");
 
-        int month1 = 15000;
+        month = 15000;
         int nineYears = 12*9;
         int total = 0;
         int d = 1;
         for (;d<=nineYears;d++){
-            total = month1 + total;
+            total = month + total;
             total = total + (total/100*7);
             if (d % 6 ==0){
                 System.out.println(" Месяц " + d + " , сумма накоплений составляет " + total);}
