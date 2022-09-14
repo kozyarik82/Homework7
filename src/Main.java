@@ -4,13 +4,13 @@ public class Main {
         // Задача 1.1
         System.out.println(" Задача 1.1 ");
 
-        int monthSalary = 65535;
+        int month = 65535;
         int goal = 2459000;
         int sum = 0;
         int i = 1;
         for (; sum <= goal; i++) {
             sum = sum + sum / 100;
-            sum = sum + monthSalary;
+            sum = sum + month;
             System.out.println(" Месяц " + i + " , сумма накоплений равна " + sum + " рублей ");
         }
 
@@ -59,12 +59,12 @@ public class Main {
         // Задача 2.3
         System.out.println(" Задача 2.3 ");
 
-        int month = 15000;
+        int month1 = 15000;
         int nineYears = 12*9;
         int total = 0;
         int d = 1;
         for (;d<=nineYears;d++){
-            total = month + total;
+            total = month1 + total;
             total = total + (total/100*7);
             if (d % 6 ==0){
                 System.out.println(" Месяц " + d + " , сумма накоплений составляет " + total);}
